@@ -1,6 +1,5 @@
 class JobsController < ApplicationController
-
-before_action :set_jobs, only: %i(show create edit destroy)
+before_action :set_jobs, only: %i(show edit update destroy)
 
   def index
     @jobs = Job.all
@@ -26,11 +25,12 @@ before_action :set_jobs, only: %i(show create edit destroy)
   end
 
   def update
+    @job = Job.update(jobs_params)
   end
 
   def destroy
     @job.destroy
-    redirect_to job_path
+    redirect_to jobs_path
   end
 
   private
@@ -42,5 +42,4 @@ before_action :set_jobs, only: %i(show create edit destroy)
   def jobs_params
     params.require(:jobs).permit(:name, :description, :category)
   end
-
 end
