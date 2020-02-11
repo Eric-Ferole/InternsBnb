@@ -1,0 +1,13 @@
+<h1>Jobs index</h1>
+
+<div>
+<% @jobs.each do |job| %>
+<h3><%= job.name %></h3>
+<ul>
+<li>company.name</li>
+<li>Category: <%= job.category %></li>
+<li>job.city</li>
+<li>Publication date : 8 febuary 2020</li>
+</ul>
+<% end %>
+</div>
