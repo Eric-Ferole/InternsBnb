@@ -40,6 +40,6 @@ before_action :set_jobs, only: %i(show edit update destroy)
   end
 
   def jobs_params
-    params.require(:jobs).permit(:name, :description, :category)
+    params.require(:job).permit(:name, :description, :category, :duration)
   end
 end
