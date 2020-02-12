@@ -6,11 +6,10 @@
 <h3><%= job.name %></h3>
 <ul>
 <li>user.logo</li>
-<li>user.name</li>
-<li>job.category: <%= job.category %></li>
-<li>user.city</li>
-<li>job.description</li>
-<li>Publication date : 8 febuary 2020</li>
+<li><%= job.user.company_name %></li>
+<li>Category: <%= job.category %></li>
+<li><%=job.user.city%> </li>
+<li>Publication date : <%= job.created_at %></li>
 </ul>
 <div>
 <% end %>
