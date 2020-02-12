@@ -1,0 +1,20 @@
+<h1>Edit your Jobs post</h1>
+
+<%= simple_form_for @job do |f| %>
+
+        <%= f.label :name, "Enter a job title" %> : <br>
+        <%= f.text_field :name %> <br>
+
+        <%= f.label :description, "Enter a description" %> : <br>
+        <%= f.text_area :description %> <br>
+
+        <%= f.label :category, "Select a jobs " %> :
+        <%= f.select :category, raw('<option value="1">IT</option><option value="2">Finance</option><option value="3">AI</option><option value="3">Education</option><option value="4">Non-Profit</option>') %> <br>
+
+        <%= f.label :duration, "Select a duration for internship " %> :
+        <%= f.select :duration, raw('<option value="1">3 months</option><option value="2">3-6 months</option><option value="3">6 months</option><option value="4">more than 6 months</option>') %> <br>
+
+        <%= f.submit "Update" %>
+<% end %>
+
+<p><%= link_to "Back to list", jobs_path %></p>
