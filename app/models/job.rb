@@ -3,7 +3,7 @@ class Job < ApplicationRecord
   has_many :requests, dependent: :destroy
 
   validates :description, length: { maximum: 500 }
-  validates :category, inclusion: { in: %w(Full-stack Developer, Web designer, Front-end developer, Back-end developer, UX/UI) }
-  validates :duration, inclusion: { in: %w(Full-stack Developer, Web designer, Front-end developer, Back-end developer, UX/UI) }
+  validates :category, length: { maximum: 50 }
+  validates :duration, inclusion: { in: %w(3 months, 3-6 months, 6 months, More than 6 months) }
   validates :name, presence: true
 end
