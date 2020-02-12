@@ -1,4 +1,4 @@
 class Job < ApplicationRecord
-  has_many :users, through: :requests, dependent: :destroy
+  belongs_to :user
   has_many :requests, dependent: :destroy
 end
