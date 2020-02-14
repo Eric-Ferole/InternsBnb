@@ -4,6 +4,6 @@ class Job < ApplicationRecord
 
   validates :description, length: { maximum: 500 }
   validates :category, length: { maximum: 50 }
-  validates :duration, inclusion: { in: %w(3 months, 3-6 months, 6 months, More than 6 months) }
+  validates :duration, inclusion: { in: ["3 months", "3-6 months", "6 months", "More than 6 months"] }
   validates :name, presence: true
 end
