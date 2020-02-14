@@ -1,20 +1,48 @@
+<h1>Expand your team with the best recruits</h1>
+<p>Enjoy all the premium benefits and advanced features of hireinterns.net when you signup for FREE.</p>
 <h2>Sign up</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
+  <div class="form-user-infos">
+    <%= f.input :first_name,
+                required: true,
+                input_html: { autocomplete: "first_name" }%>
+    <%= f.input :last_name,
+                required: true,
+                input_html: { autocomplete: "last_name" }%>
     <%= f.input :email,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "email" }%>
     <%= f.input :password,
                 required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: true,
-                input_html: { autocomplete: "new-password" } %>
+                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)%>
+ <!--   <%= f.input :password_confirmation,
+                required: true %> -->
+    </div>
+    <div class="form_company_infos">
+    <%= f.input :company_name,
+                required: true %>
+    <%= f.input :logo, as: :file,
+                require: true %>
+    <%= f.input :street_address,
+                required: true %>
+    <%= f.input :city,
+                required: true %>
+    <%= f.input :province,
+                required: true %>
+    <%= f.input :postal_code,
+                required: true %>
+    <%= f.select :country,
+                raw('<option value="1">Canada</option>') %>
+
+    <%= f.label :website, "Website or careers page" %>
+    <%= f.input :website %>
+    <%= f.label :business_sizess_, "What is the size of your business ? " %>
+    <%= f.select :business_size,
+                raw('<option value="1">Less than 5 employees</option><option value="2">5-10 employees</option><option value="3">10-25 employees</option><option value="3">25-50 employees</option><option value="4">50-100</option><option value="4">100-250 employees</option><option value="4">more than 250 employees</option>') %> <br>
+
   </div>
 
   <div class="form-actions">
