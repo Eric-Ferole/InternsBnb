@@ -34,11 +34,10 @@
                 required: true %>
     <%= f.input :postal_code,
                 required: true %>
-    <%= f.select :country,
-                raw('<option value="1">Canada</option>') %>
-
-    <%= f.label :website, "Website or careers page" %>
-    <%= f.input :website %>
+    <div class="countries">Country
+    <%= f.country_select :country %></div>
+    <p>
+    <%= f.input :website, label: "Website or careers page" %>
     <%= f.label :business_sizess_, "What is the size of your business ? " %>
     <%= f.select :business_size,
                 raw('<option value="1">Less than 5 employees</option><option value="2">5-10 employees</option><option value="3">10-25 employees</option><option value="3">25-50 employees</option><option value="4">50-100</option><option value="4">100-250 employees</option><option value="4">more than 250 employees</option>') %> <br>
