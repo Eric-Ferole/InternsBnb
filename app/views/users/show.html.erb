@@ -14,3 +14,6 @@
 <li><b>Business Size:</b> <%= @user.business_size %> </li>
 </ul>
 </div>
+
+<%= link_to "Edit your profile", edit_user_registration_path %>
+<%= link_to "Delete your account", registration_path(@user), data: { confirm: "Are you sure?" }, method: :delete %>
