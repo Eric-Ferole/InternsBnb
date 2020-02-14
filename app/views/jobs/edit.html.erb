@@ -16,5 +16,5 @@
 
         <%= f.submit "Update" %>
 <% end %>
-
+<%= link_to 'delete post', job_path(@job), method: :delete %>
 <p><%= link_to "Back to list", jobs_path %></p>

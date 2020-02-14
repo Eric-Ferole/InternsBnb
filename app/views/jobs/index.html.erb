@@ -1,9 +1,12 @@
 <h1>Jobs index</h1>
-
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 d-flex flex-row">
 <div>
 <% @jobs.each do |job| %>
+
 <div>
-<h3><%= job.name %></h3>
+<h3><%=link_to job.name, job_path(job) %></h3>
 <ul>
 <li>Category: <%= job.category %></li>
 <li>Internship duration : <%= job.duration %></li>
@@ -19,4 +22,7 @@
     <p><%= link_to "Visit Website", job.user.website %></p>
   </div>
 <% end %>
+</div>
+</div>
+</div>
 </div>

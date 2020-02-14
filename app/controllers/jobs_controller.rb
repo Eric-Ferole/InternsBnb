@@ -1,11 +1,12 @@
 class JobsController < ApplicationController
-before_action :set_jobs, only: %i(show edit update destroy)
+  before_action :set_jobs, only: %i(show edit update destroy)
 
   def index
     @jobs = Job.all
   end
 
   def show
+
   end
 
   def new
@@ -13,12 +14,12 @@ before_action :set_jobs, only: %i(show edit update destroy)
   end
 
   def create
-    @job = Job.create(jobs_params)
-      if @job.save
-        redirect_to job_path(@job)
-      else
-        render :new
-      end
+    @job = Job.new(jobs_params)
+    if @job.save
+      redirect_to job_path(@job)
+    else
+      render :new
+    end
   end
 
   def edit
