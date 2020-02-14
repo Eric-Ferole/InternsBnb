@@ -1,0 +1,16 @@
+<h1>Hello <%= @user.company_name %></h1>
+<%= cl_image_tag @user.logo.key, width: 120 %>
+<div>
+<ul>
+<li><b>First Name:</b> <%= @user.first_name %></li>
+<li><b>Last Name:</b> <%= @user.last_name %></li>
+<li><b>Email:</b> <%= @user.email %></li>
+<li><b>Street Address:</b> <%= @user.street_address %> </li>
+<li><b>City:</b> <%= @user.city %> </li>
+<li><b>Province:</b> <%= @user.province %> </li>
+<li><b>Postal Code:</b> <%= @user.postal_code %> </li>
+<li><b>Country:</b> <%= @user.country %> </li>
+<li><b>Website:</b> <%= @user.website %> </li>
+<li><b>Business Size:</b> <%= @user.business_size %> </li>
+</ul>
+</div>

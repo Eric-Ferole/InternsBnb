@@ -5,13 +5,18 @@
 <div>
 <h3><%= job.name %></h3>
 <ul>
-<li>user.logo</li>
-<li>user.name</li>
-<li>job.category: <%= job.category %></li>
-<li>user.city</li>
-<li>job.description</li>
-<li>Publication date : 8 febuary 2020</li>
+<li>Category: <%= job.category %></li>
+<li>Internship duration : <%= job.duration %></li>
+<li><%=job.user.city%> </li>
+<li>Publication date : <%= job.created_at %></li>
 </ul>
 <div>
+  <div class="business_info">
+    <%= cl_image_tag(job.user.logo, height: 120, crop: :fill) %>
+    <h4><strong><%= job.user.company_name %></strong></h4>
+    <p><%= job.user.business_size %></p>
+    <p><%= job.user.street_address %></p>
+    <p><%= link_to "Visit Website", job.user.website %></p>
+  </div>
 <% end %>
 </div>
