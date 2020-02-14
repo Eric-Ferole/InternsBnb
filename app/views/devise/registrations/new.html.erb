@@ -30,14 +30,16 @@
                 required: true %>
     <%= f.input :city,
                 required: true %>
-    <%= f.input :province,
-                required: true %>
     <%= f.input :postal_code,
                 required: true %>
-    <%= f.select :country,
-                raw('<option value="1">Canada</option>') %>
+    <%= f.select :province,
+                required: true %>
+    <%= f.label :website, "Country" %>
+    <%= f.country_select :country %>
+    <!--<%= f.select :country,
+                raw('<option value="1">Canada</option>') %> -->
 
-    <%= f.label :website, "Website or careers page" %>
+    <!--<%= f.label :website, "Website or careers page" %>-->
     <%= f.input :website %>
     <%= f.label :business_sizess_, "What is the size of your business ? " %>
     <%= f.select :business_size,
