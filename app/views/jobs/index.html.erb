@@ -12,7 +12,9 @@
 </ul>
 <div>
   <div class="business_info">
-    <%= cl_image_tag(job.user.logo, height: 120, crop: :fill) %>
+    <% if job.user.logo.attached? %>
+      <%= cl_image_tag(job.user.logo.key, height: 120, crop: :fill) %>
+    <% end %>
     <h4><strong><%= job.user.company_name %></strong></h4>
     <p><%= job.user.business_size %></p>
     <p><%= job.user.street_address %></p>

@@ -17,7 +17,7 @@
     <div class="form_company_infos">
     <%= f.input :company_name,
                 required: true %>
-    <%= cl_image_tag @user.logo.key, width: 120 %>
+    <%= cl_image_tag @user.logo, width: 120 %>
     <%= f.input :logo, as: :file,
                 require: true %>
     <%= f.input :street_address,
