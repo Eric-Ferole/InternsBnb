@@ -1,1 +1,29 @@
 <h1><%= @job.name %></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 d-flex flex-row">
+<div>
+
+
+<div>
+    <h4><strong><%= @job.user.company_name %></strong></h4>
+    <p><%= @job.user.business_size %></p>
+    <p><%= @job.user.street_address %></p>
+
+  </div>
+<ul>
+<li>Category: <%= @job.category %></li>
+<li>Internship duration : <%= @job.duration %></li>
+<li><%=@job.user.city%> </li>
+<li>Publication date : <%= @job.created_at %></li>
+</ul>
+<div>
+  <p><%= link_to "Visit Website", @job.user.website %></p>
+  <div class="business_info">
+    <%= cl_image_tag(@job.user.logo, height: 120, crop: :fill) %>
+</div>
+</div>
+</div>
+</div>
+<button type='button' onclick="location.href='<%= edit_job_path %>';">edit job</button>
+<button type='button' onclick="location.href='<%= jobs_path %>';">Back to list</button>
