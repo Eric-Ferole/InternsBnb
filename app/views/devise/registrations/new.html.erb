@@ -32,14 +32,26 @@
                 required: true %>
     <%= f.input :postal_code,
                 required: true %>
+    <%= f.label :province, "Province" %>
     <%= f.select :province,
-                required: true %>
-    <%= f.label :website, "Country" %>
-    <%= f.country_select :country %>
-    <!--<%= f.select :country,
-                raw('<option value="1">Canada</option>') %> -->
+                raw('
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NU">Nunavut</option>
+                <option value="YT">Yukon</option>') %> <br>
 
-    <!--<%= f.label :website, "Website or careers page" %>-->
+    <%= f.label :country, "Country" %>
+    <%= f.country_select "country", only: ["CA", "US"],
+                required: true %>
     <%= f.input :website %>
     <%= f.label :business_sizess_, "What is the size of your business ? " %>
     <%= f.select :business_size,
