@@ -2,10 +2,18 @@
   <%= text_field_tag :query,
     params[:query],
     class: "form-control",
+      id: "search-query",
     placeholder: "Find an internship!"
   %>
+  <div>
+    <ul id="autocomplete-ul">
+    </ul>
+  </div>
+
+
   <%= submit_tag "Search", class: "btn btn-primary" %>
 <% end %>
+
 
 
 <h1>Pages#home</h1>

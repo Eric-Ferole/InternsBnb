@@ -49,4 +49,8 @@ class JobsController < ApplicationController
   def jobs_params
     params.require(:job).permit(:name, :description, :category, :duration)
   end
+
+  def get_search_suggestions(query)
+
+  end
 end
