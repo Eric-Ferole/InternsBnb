@@ -16,5 +16,7 @@
 
         <%= f.submit "Update" %>
 <% end %>
+<% if policy(@job).destroy? %>
 <%= link_to 'delete post', job_path(@job), method: :delete %>
+<% end %>
 <p><%= link_to "Back to list", jobs_path %></p>
