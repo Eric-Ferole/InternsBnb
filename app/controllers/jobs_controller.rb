@@ -4,6 +4,7 @@ class JobsController < ApplicationController
   def index
     @jobs = policy_scope(Job)
     if params[:query].present?
+      @jobquery = "#" + params[:query]
       sql_query = "name ILIKE :query OR description ILIKE :query OR category ILIKE :query OR duration ILIKE :query"
       @jobs = Job.where(sql_query, query: "%#{params[:query]}%")
     end
