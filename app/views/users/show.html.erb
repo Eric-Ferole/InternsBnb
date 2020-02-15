@@ -13,6 +13,8 @@
 <li><b>Website:</b> <%= @user.website %> </li>
 <li><b>Business Size:</b> <%= @user.business_size %> </li>
 </ul>
+<button type='button' onclick="location.href='<%= edit_user_registration_path %>';">edit your profile</button>
+<button type='button' onclick="location.href='<%= jobs_path %>';">Back to list</button>
 </div>
 
 <%= link_to "Edit your profile", edit_user_registration_path %>
