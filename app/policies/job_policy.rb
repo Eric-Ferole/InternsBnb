@@ -5,7 +5,7 @@ class JobPolicy < ApplicationPolicy
     end
   end
   def show?
-     true
+    true
   end
 
   def create?
