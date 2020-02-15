@@ -2,7 +2,14 @@ class JobsController < ApplicationController
   before_action :set_jobs, only: %i(show edit update destroy)
 
   def index
-    @jobs = policy_scope(Job).all
+
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR description ILIKE :query OR category ILIKE :query OR duration ILIKE :query"
+      @jobs = Job.where(sql_query, query: "%#{params[:query]}%")
+    else    
+      @jobs = policy_scope(Job)
+    end
+
   end
 
   def show

@@ -20,6 +20,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'devise'
 gem 'cloudinary', '~> 1.12.0'
+gem 'country_select', '~> 4.0'
 
 
 group :development do

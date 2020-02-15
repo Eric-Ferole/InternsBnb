@@ -16,3 +16,6 @@
 <button type='button' onclick="location.href='<%= edit_user_registration_path %>';">edit your profile</button>
 <button type='button' onclick="location.href='<%= jobs_path %>';">Back to list</button>
 </div>
+
+<%= link_to "Edit your profile", edit_user_registration_path %>
+<%= link_to "Delete your account", registration_path(@user), data: { confirm: "Are you sure?" }, method: :delete %>
