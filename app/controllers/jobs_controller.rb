@@ -18,8 +18,6 @@ class JobsController < ApplicationController
     @job = current_user.jobs.new(jobs_params)
     authorize @job
 
-
-
     if @job.save
       redirect_to job_path(@job), notice: "New job has been posted!"
     else
@@ -32,9 +30,14 @@ class JobsController < ApplicationController
   end
 
   def update
+    @job.update(jobs_params)
     authorize @job
-    @job = Job.update(jobs_params)
+    if @job.save
+      redirect_to @job
+    else
+      render :edit
   end
+end
 
   def destroy
     authorize @job
