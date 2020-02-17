@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_action :set_jobs, only: %i(show edit update destroy)
+  before_action :set_jobs, only: ["show", "edit", "update", "destroy"]
 
   def index
     @jobs = policy_scope(Job)

@@ -1,0 +1,38 @@
+   <div class="container">
+    <h1 class="top_h1">Apply to this position!</h1>
+    <table class="table">
+    <thead>
+      <tr>
+      <% if @job.user.logo.attached? %>
+      <%= cl_image_tag @job.user.logo.key, height: 100, crop: :fill %>
+      <% end %>
+        <h2><%= @job.name.capitalize %></h2>
+        <th scope="col"><h3>Description</h3></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+        <ul>
+
+          <li><b>Description: </b><%= @job.description %></li>
+          <li><b>Duration: </b> <%= @job.duration %></li>
+         <li><b>Publication date : </b><%= @job.created_at %></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<%= simple_form_for [@job, @request] do |f| %>
+  <%= f.error_notification %>
+
+
+
+
+
+    <%= f.submit "submit" %>
+<% end %>
+
+<p><%= link_to "Back to list", jobs_path %></p>
