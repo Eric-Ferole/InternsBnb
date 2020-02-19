@@ -4,6 +4,7 @@ ruby '2.6.3'
 gem 'country_select', '~> 4.0'
 gem 'pg_search'
 gem 'pundit'
+gem 'geocoder'
 
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
