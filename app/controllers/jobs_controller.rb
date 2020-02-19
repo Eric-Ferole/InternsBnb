@@ -1,14 +1,25 @@
 class JobsController < ApplicationController
   before_action :set_jobs, only: ["show", "edit", "update", "destroy"]
 
+
+
   def index
-    @jobs = policy_scope(Job)
     if params[:query].present?
       @jobquery = "#" + params[:query]
       sql_query = "name ILIKE :query OR description ILIKE :query OR category ILIKE :query OR duration ILIKE :query"
       @jobs = Job.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @jobs = policy_scope(Job)
     end
-
+    @users = User.geocoded
+    @markers = @users.map do |user|
+      {
+        lat: user.latitude,
+        lng: user.longitude
+      }
+    end
+    p "******************************"
+    p @markers
   end
 
   def show
