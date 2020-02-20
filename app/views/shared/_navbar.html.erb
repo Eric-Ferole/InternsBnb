@@ -1,50 +1,18 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "" %>
-    <% end %>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", root_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to current_user.email, user_path(current_user), class: "nav-link" %>
-        </li>
-
-
-        <li class="nav-item dropdown">
-        <% if @current_user %>
-          <%= cl_image_tag @current_user.logo.key, width: 75, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <%else%>
-          <%= image_tag "https://avatarfiles.alphacoders.com/126/126277.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Create a new job", new_job_path, class: "dropdown-item" %>
-            <%= link_to "job postings", jobs_path, class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-          <%end%>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Create a new job", new_job_path, class: "dropdown-item" %>
-            <%= link_to "job postings", jobs_path, class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
-                <li class="nav-item">
-          <%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %>
-        </li>
-
-      <% end %>
-    </ul>
-  </div>
-</div>
+  <div class="header">
+    <div class="nav_container">
+      <div class="logo_hi">
+        <%= link_to "#" do %>
+        <%= image_tag "hi-interns_logo.png", alt: "Hi Interns", style: 'width:172px;' %>
+        <% end %>
+      </div>
+      <div class="nav_menu">
+        <ul>
+          <a href=""><li>Candidates <span class="indice">12</span></li></a>
+          <a href=""><li>My profile</li></a>
+          <a href=""><li>My posts</li></a>
+          <a href="" class="button"><li>Create a post</li></a>
+          <a href=""><li>Logout <%= image_tag "sign-out-alt.svg", alt: "sign-out"%></li></a>
+        </ul>
+      </div>
+    </div>
