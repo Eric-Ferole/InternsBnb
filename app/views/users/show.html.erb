@@ -1,3 +1,4 @@
+<div class ="container">
 <h1>Hello <%= @user.company_name %></h1>
 <%#= cl_image_tag @user.logo.key, width: 120 %>
 <div>
@@ -19,11 +20,9 @@
 <%= link_to "Delete your account", registration_path(@user), data: { confirm: "Are you sure?" }, method: :delete %>
 
 
-
   <h1>Incoming application</h1>
   <% @incoming_requests.each do |request| %>
     <p><%= request.user.first_name %> <%= request.user.last_name %></p>
     <p><%= request.job.name %></p>
     <p><%= link_to 'See his profile', user_path(request.user) %> </p>
   <% end %>
-

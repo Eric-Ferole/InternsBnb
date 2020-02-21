@@ -1,0 +1,44 @@
+body {
+  background-color: #F8F8F8;
+  font-family: "Avenir Next";
+  font-size: 16px;
+  color: #000;
+}
+
+.bt-s {
+
+}
+
+.bt-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EC3232;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 10px 20px;
+}
+
+.bt-m:hover {
+  background: #CF2C2C;
+  transition: 0.5s;
+}
+
+.bt-l {
+
+}
+
+.bt-xl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #EC3232;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+}

@@ -1,0 +1,42 @@
+/*@import "general.css";
+@import "card_job.css";
+*/
+.card_search_container {
+/*  background-color: #fff;
+*/  display: flex;
+  justify-content: row;
+  border-bottom: 1px solid #ddd;
+  padding: 24px 24px 24px 46px;
+}
+
+.cta {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card_infos {
+  flex-grow: 1;
+
+}
+
+.job_name.result {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.business_name.result {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.text-s {
+  font-size: 13px;
+}
+
+.date {
+  font-size: 13px;
+}
+
+.card_infos p {
+  margin: 6px 0 0 0;
+}

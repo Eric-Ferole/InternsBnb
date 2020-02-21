@@ -1,9 +1,9 @@
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 
 // Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Raleway", "Helvetica", "sans-serif";
+$body-font: "AvenirNextLTW01-Regular", "Helvetica", "sans-serif";
+$headers-font: "AvenirNextLTW01-Regular", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -14,3 +14,21 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=3650476b-4812-47e3-9d8b-482ddcf9bd7f");
+    @font-face{
+        font-family:"AvenirNextLTW01-Regular";
+        src:url("Fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),url("Fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff");
+    }
+    @font-face{
+        font-family:"AvenirNextLTW01-Medium";
+        src:url("Fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"),url("Fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Avenir Next LT W01 Demi";
+        src:url("Fonts/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2"),url("Fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Avenir Next LT W01 Bold";
+        src:url("Fonts/14c73713-e4df-4dba-933b-057feeac8dd1.woff2") format("woff2"),url("Fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff");
+    }
