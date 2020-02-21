@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="11px" viewBox="0 0 9 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Icons/Solid/map-marker-alt</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.08249349,11.6980931 C3.0081543,7.24121432 2.4375,6.78380232 2.4375,5.14583234 C2.4375,2.90216915 4.25633626,1.08333333 6.5,1.08333333 C8.74366374,1.08333333 10.5625,2.90216915 10.5625,5.14583234 C10.5625,6.78380232 9.9918457,7.24121432 6.91750651,11.6980931 C6.71575684,11.9895351 6.28422201,11.9895139 6.08249349,11.6980931 Z M6.5,6.83854026 C7.43486165,6.83854026 8.19270833,6.08069377 8.19270833,5.14583234 C8.19270833,4.21097092 7.43486165,3.45312442 6.5,3.45312442 C5.56513835,3.45312442 4.80729167,4.21097092 4.80729167,5.14583234 C4.80729167,6.08069377 5.56513835,6.83854026 6.5,6.83854026 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="job_card" transform="translate(-129.000000, -109.000000)">
+            <g id="Group" transform="translate(127.000000, 106.000000)">
+                <g id="Icons/Solid/map-marker-alt" transform="translate(0.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="map-marker-alt" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Colors/Third" mask="url(#mask-2)" fill="#000000" fill-rule="evenodd">
+                        <rect id="Rectangle" x="0" y="0" width="13" height="13"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

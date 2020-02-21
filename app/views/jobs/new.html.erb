@@ -1,20 +1,17 @@
-<div class="container">
-<h1>Create a new intership post</h1>
+<h1>Create an internship post</h1>
 
 <%= simple_form_for @job do |f| %>
   <%= f.error_notification %>
 
-    <%= f.label :name, "Enter a job title" %> : <br>
-    <%= f.text_field :name %> <br>
+    <%= f.label :duration, "Internship duration" %> :
+    <%= f.select :duration, ["Less than 3 months", "3 months", "3-6 months", "6 months", "More than 6 months"] %> <br>
+
+    <%= f.label :name, "Job title" %> : <%= f.text_field :name %> <br>
 
     <%= f.label :description, "Enter a description" %> : <br>
-    <%= f.text_area :description %> <br>
-
-    <%= f.label :category, "Select a jobs " %> :
-    <%= f.select :category, ["IT", "Finance", "AI","Education", "Non-Profit"]%> <br>
-
-    <%= f.label :duration, "Select a duration for internship " %> :
-    <%= f.select :duration, ["Less than 3 months", "3 months", "3-6 months", "6 months", "More than 6 months"] %> <br>
+    <div id = "description_container">
+      <%= f.text_area :description %>
+    </div><br>
 
     <%= f.submit "submit" %>
 <% end %>
