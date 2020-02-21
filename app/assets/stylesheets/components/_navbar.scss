@@ -1,12 +1,93 @@
-.navbar-lewagon {
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+}
+
+.nav_container {
+  height: 90px;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  background-color: #fff;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+ul {
+  padding: 0px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+li {
+  display: inline-block;
+  margin: 0 24px;
 }
+
+.nav_menu {
+  margin-right: 22px;
+
+}
+
+.nav_menu a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.nav_menu a:visited {
+  color: #000000;
+}
+
+.nav_menu a:hover {
+  color: #EC3232;
+  transition: 0.3s;
+}
+
+.logo_hi {
+  margin-left: 45px;
+}
+
+.button {
+  max-height: 50px;
+  background: #EC3232;
+  border-radius: 6px;
+  padding: 10px 0;
+}
+
+.button:hover {
+  background: #CF2C2C;
+  transition: 0.5s;
+}
+
+.button li {
+  color: #fff;
+}
+
+.indice {
+/*  display: inline-block;*/
+  height: 12px;
+  background: #EC3232;
+  font-family: AvenirNext-Bold;
+  color: #fff;
+  font-size: 8px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: super;
+}
+
+li img {
+  margin-left: 6px;
+}
+
+li img:hover {
+  fill: #EC3232;
+}
+
+.form_field.search {
+  width: 440px;
+}
+
+.form_field.city {
+  width: 320px;
+  margin-left: 16px;
+}
+
