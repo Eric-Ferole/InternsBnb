@@ -54,8 +54,8 @@ class JobsController < ApplicationController
       redirect_to @job
     else
       render :edit
+    end
   end
-end
 
   def destroy
     authorize @job
