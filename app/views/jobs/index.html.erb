@@ -16,7 +16,7 @@
           <p class="job_name result"><%=link_to job.name, job_path(job) %></p>
           <p class="business_name result"><%= job.user.company_name %></p>
           <p class="date"><%= job.created_at %></p>
-          <p class="text-s"><%= image_tag "map-marker-alt.svg", alt: "Map pin" %> <%=job.user.city%></p>
+          <p class="text-s"><%= image_tag "map-marker-alt.svg", alt: "Map pin" %> <%=job.user.street_address%></p>
         </div>
           <div class="cta">
             <%= link_to "View details", job.user.website, class: 'bt-m' %>
