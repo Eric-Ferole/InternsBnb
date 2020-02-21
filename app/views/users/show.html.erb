@@ -1,3 +1,4 @@
+<div class ="container">
 <h1>Hello <%= @user.company_name %></h1>
 <%= cl_image_tag @user.logo.key, width: 120 %>
 <div>
@@ -18,3 +19,4 @@
 
 <%= link_to "Edit your profile", edit_user_registration_path %>
 <%= link_to "Delete your account", registration_path(@user), data: { confirm: "Are you sure?" }, method: :delete %>
+</div>
