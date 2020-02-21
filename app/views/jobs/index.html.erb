@@ -1,35 +1,34 @@
-<h1>Jobs index</h1>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12 d-flex flex-row">
-<% if @jobs %>
-<span> <h2><%= @jobs.count %> Jobs found in: <%=@jobquery %></h2></span>
-<% end %>
-</div>
-<div>
-<% @jobs.each do |job| %>
 
-<div>
-<h3><%=link_to job.name, job_path(job) %></h3>
-<ul>
-<li>Category: <%= job.category %></li>
-<li>Internship duration : <%= job.duration %></li>
-<li>Publication date : <%= job.created_at.strftime("%b %d, %Y") %></li>
-</ul>
-<div>
-  <div class="business_info">
-    <% if job.user.logo.attached? %>
-      <%= cl_image_tag(job.user.logo.key, height: 120, crop: :fill) %>
+<div class="search_body">
+  <div class="search_results">
+    <div class="search_query">
+      <% if @jobs %>
+        <p><%= @jobs.count %> Jobs found in: <%=@jobquery %></p>
+      <% end %>
+    </div>
+    <% @jobs.each do |job| %>
+      <div class="card_search_container">
+        <div class="logo">
+          <% if job.user.logo.attached? %>
+            <%= cl_image_tag(job.user.logo.key, width: 75)%>
+          <% end %>
+        </div>
+        <div class="card_infos">
+          <p class="job_name result"><%=link_to job.name, job_path(job) %></p>
+          <p class="business_name result"><%= job.user.company_name %></p>
+          <p class="date"><%= job.created_at %></p>
+          <p class="text-s"><%= image_tag "map-marker-alt.svg", alt: "Map pin" %> <%=job.user.street_address%></p>
+        </div>
+          <div class="cta">
+            <%= link_to "View details", job.user.website, class: 'bt-m' %>
+<!--           <a href="#"><div class="bt-m">View details</div></a>
+ -->        </div>
+      </div>
     <% end %>
-    <h4><strong><%= job.user.company_name %></strong></h4>
-    <p><%= job.user.street_address %></p>
-    <p><%= link_to "Visit Website", job.user.website %></p>
   </div>
-<% end %>
-<p>
-  <%= link_to "Home", root_path %>
-</p>
+
+  <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
+<!--style="width: 100%; height: 600px;"-->

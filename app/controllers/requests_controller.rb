@@ -1,5 +1,5 @@
 class RequestsController < ApplicationController
-
+  #before_action :set_user, only: ["new", "create"]
 
   def new
     @request = Request.new
@@ -10,8 +10,10 @@ class RequestsController < ApplicationController
   def create
     @request = Request.new(request_params)
     @request.user = current_user
-    authorize @request
+    @job = Job.find(params[:job_id])
+    @request.job = @job
     @request.status = "pending"
+    authorize @request
     if @request.save!
       redirect_to jobs_path
     else
@@ -19,18 +21,13 @@ class RequestsController < ApplicationController
     end
   end
 
-  def update
-    request = Request.find(params[:id])
-    authorize request
-    if request.update!(request_params)
-    redirect_to jobs_path
-  end
-  end
-
-
   private
 
+  def set_user
+    @user = User.find(params[:id])
+  end
+
   def request_params
-    params.require(:request).permit(:status, :user_id, :job_id, :id)
+    params.require(:request).permit(:description)
   end
 end
