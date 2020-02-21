@@ -1,5 +1,5 @@
 
-  <div class="header">
+  <!-- <div class="header">
     <div class="nav_container">
       <div class="logo_hi">
         <%= link_to "#" do %>
@@ -15,4 +15,27 @@
           <a href=""><li>Logout <%= image_tag "sign-out-alt.svg", alt: "sign-out"%></li></a>
         </ul>
       </div>
-    </div>
+    </div> -->
+
+    <div class="header">
+      <div class="nav_container">
+        <div class="logo_hi">
+          <%= link_to "#" do %>
+            <%= image_tag "hi-interns_logo.png", alt: "Hi Interns", style: 'width:172px;' %>
+          <% end %>
+        </div>
+        <div class="nav_menu">
+          <ul>
+            <a href=""><li>Candidates <span class="indice">12</span></li></a>
+            <a href=""><li>My profile</li></a>
+            <a href=""><li>My posts</li></a>
+            <a href="" class="button"><li>Create a post</li></a>
+            <a href=""><li>Logout  <%= image_tag "sign-out-alt.svg", alt: "sign-out"%></li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="search_bar">
+       <input type="text" class="form_field search" placeholder="Enter a keyword ex: Web Developer, Designer, etc." name="seach" id='search'/>
+       <input type="text" class="form_field city" placeholder="Enter a city" name="city" id='city'/>
+      </div>
