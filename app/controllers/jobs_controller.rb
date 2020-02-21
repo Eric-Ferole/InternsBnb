@@ -11,15 +11,16 @@ class JobsController < ApplicationController
     else
       @jobs = policy_scope(Job)
     end
-    @users = User.geocoded
-    @markers = @users.map do |user|
+    @users = @jobs.map do |job|
+      user = job.user
+      user unless user.latitude.nil?
+    end
+    @markers = @users.compact.map do |user|
       {
         lat: user.latitude,
         lng: user.longitude
       }
     end
-    p "******************************"
-    p @markers
   end
 
   def show
