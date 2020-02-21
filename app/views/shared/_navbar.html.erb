@@ -27,14 +27,14 @@
         <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-link" %>
       </li>
       <!-- USER IMAGE -->
-      <!-- <% if @current_user %>
-          <%= cl_image_tag @current_user.logo.key, width: 50 %>
-          <%else%>
-          <%= image_tag "https://avatarfiles.alphacoders.com/126/126277.jpg"%>
-          <%end%> -->
+      <!-- <%# if @current_user %>
+          <%#= cl_image_tag @current_user.logo.key, width: 50 %>
+          <#%else%>
+          <%#= image_tag "https://avatarfiles.alphacoders.com/126/126277.jpg"%>
+          <%#end%> -->
 
 
-        </li>
+
       <% else %>
         <li class="nav-item">
           <%= link_to "Login", new_user_session_path, class: "nav-link" %>

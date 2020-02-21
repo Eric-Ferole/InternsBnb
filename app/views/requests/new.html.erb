@@ -26,6 +26,7 @@
 
 
 <%= simple_form_for [@job, @request] do |f| %>
+  <%= f.input :description%>
   <%= f.error_notification %>
 
 
@@ -34,5 +35,13 @@
 
     <%= f.submit "submit" %>
 <% end %>
+
+
+
+
+
+
+
+<%= current_user.email %>
 
 <p><%= link_to "Back to list", jobs_path %></p>
