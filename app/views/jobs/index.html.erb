@@ -16,15 +16,18 @@
           <p class="job_name result"><%=link_to job.name, job_path(job) %></p>
           <p class="business_name result"><%= job.user.company_name %></p>
           <p class="date"><%= job.created_at %></p>
-          <p class="text-s"><%= image_tag "map-marker-alt.svg", alt: "Map pin" %> <%=job.user.city%></p>
+          <p class="text-s"><%= image_tag "map-marker-alt.svg", alt: "Map pin" %> <%=job.user.street_address%></p>
         </div>
           <div class="cta">
             <%= link_to "View details", job.user.website, class: 'bt-m' %>
-        </div>
+<!--           <a href="#"><div class="bt-m">View details</div></a>
+ -->        </div>
       </div>
     <% end %>
   </div>
+
   <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
   </div>
 </div>
+<!--style="width: 100%; height: 600px;"-->
