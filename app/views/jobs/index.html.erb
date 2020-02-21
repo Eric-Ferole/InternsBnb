@@ -14,8 +14,7 @@
 <ul>
 <li>Category: <%= job.category %></li>
 <li>Internship duration : <%= job.duration %></li>
-<li><%=job.user.city%> </li>
-<li>Publication date : <%= job.created_at %></li>
+<li>Publication date : <%= job.created_at.strftime("%b %d, %Y") %></li>
 </ul>
 <div>
   <div class="business_info">
@@ -23,7 +22,6 @@
       <%= cl_image_tag(job.user.logo.key, height: 120, crop: :fill) %>
     <% end %>
     <h4><strong><%= job.user.company_name %></strong></h4>
-    <p><%= job.user.business_size %></p>
     <p><%= job.user.street_address %></p>
     <p><%= link_to "Visit Website", job.user.website %></p>
   </div>
