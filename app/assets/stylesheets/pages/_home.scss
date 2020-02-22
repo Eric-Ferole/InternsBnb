@@ -2,7 +2,24 @@
 .illustration_container {
   display: flex;
   justify-content: center;
+  margin: 50px;
+
 }
+
+  .search_bar_home {
+    display: flex;
+    justify-content: center;
+
+    .button {
+      font-size: 15px;
+      color: #fff;
+      font-family: "Avenir Next";
+      width: 120px;
+      max-height: 55px;
+      font-weight: bold;
+    }
+  }
+
 
 .illustration {
   display: flex;

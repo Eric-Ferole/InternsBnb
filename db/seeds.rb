@@ -1,5 +1,5 @@
 require 'open-uri'
-require 'pry-byebug'
+# require 'pry-byebug'
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -24,7 +24,7 @@ users_attributes = [
 { company_name:"AutoDesk", street_address:"10 Rue Duke Montreal, Canada", country:"Canada", website:"https://www.autodesk.com/careers", email:"test9@test.com", password:"1234sunshine" },
 { company_name:"Cirque du Soleil", street_address:"8400 2e Avenue Montreal, Canada", country:"Canada", website:"https://www.cirquedusoleil.com/careers", email:"test10@test.com", password:"1234sunshine" },
 { company_name:"Warner Brothers Games Montréal", street_address:"888 Boulevard de Maisonneuve East Montreal, Canada", country:"Canada", website:"https://wbgamesmontreal.com/en/jobs", email:"test13@test.com", password:"1234sunshine" },
-{ company_name:"CBC/Radio-Canada", street/_address:"1400 Boulevard René-Lévesque E Montreal, Canada", country:"Canada", website:"https://cbc.radio-canada.ca/en/working-with-us/jobs", email:"test14@test.com", password:"1234sunshine" },
+{ company_name:"CBC/Radio-Canada", street_address:"1400 Boulevard René-Lévesque E Montreal, Canada", country:"Canada", website:"https://cbc.radio-canada.ca/en/working-with-us/jobs", email:"test14@test.com", password:"1234sunshine" },
 { company_name:"Morgan Stanley", street_address:"700 Rue Wellington Montreal, Canada", country:"Canada", website:"https://www.morganstanley.com/people/people-montreal", email:"test15@test.com", password:"1234sunshine" },
 { company_name:"Morneau Shepell", street_address:"800 Rue du Square-Victoria Montreal, Canada", country:"Canada", website:"https://www.morneaushepell.com/ca-en/careers", email:"test16@test.com", password:"1234sunshine" },
 { company_name:"Frank and Oak", street_address:"160 Rue St Viateur East Montreal, Canada", country:"Canada", website:"www.frankandoak.com", email:"test19@test.com", password:"1234sunshine" }]
