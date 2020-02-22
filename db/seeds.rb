@@ -143,84 +143,576 @@ puts 'Creating Jobs...'
 jobs_attributes = [
   {
     name:"UX Designer",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"6 months",
     user: User.find_by(company_name:"National Bank of Canada")
   },
   {
     name:"UX/UI Designer",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"3-6 months",
     user: User.find_by(company_name:"Ivado Lab")
   },
   {
     name:"Web designer",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"3-6 months",
     user: User.find_by(company_name:"Lightspeed")
   },
   {
     name:"UX Designer",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"6 months",
     user: User.find_by(company_name:"CGI")
   },
   {
     name:"Front End developer",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"3 months",
     user: User.find_by(company_name:"Google")
   },
   {
     name:"Full Stack PHP Developer",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"3-6 months",
     user: User.find_by(company_name:"AutoDesk")
   },
   {
     name:"Software Developer",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"More than 6 months",
     user: User.find_by(company_name:"Cirque du Soleil")
   },
   {
     name:"Product owner",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"3 months",
     user: User.find_by(company_name:"Warner Brothers Games Montréal")
   },
   {
     name:"Scrum master",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"3 months",
     user: User.find_by(company_name:"CBC/Radio-Canada")
   },
   {
     name:"Project coordinator",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"More than 6 months",
     user: User.find_by(company_name:"Morgan Stanley")
   },
   {
     name:"Product owner",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"3 months",
     user: User.find_by(company_name:"Morneau Shepell")
   },
   {
     name:"Project coordinator",
-    description:"Enter a description",
+    description:"We have an exciting opportunity for a seasoned Backend Web Developer. Our well known tech company network establishes millions of connections and enables goods to move through retail and e-commerce every given day. We’re a well recognized industry leader with a vast customer base; but we’re still small enough to be agile, challenge the status quo and know that what we do matters.
+
+Top Reasons to Work with Us
+• Great people / Cool Digs
+• Autonomy while you work
+• The sky is your limit
+
+What You Will be Doing
+• Designing and developing scalable applications for web
+• Practicing Agile/Scrum process by participating in daily scrum, retrospective, planning and demo
+• Troubleshooting and assisting to resolve production support issue
+• Simply put…deliver results to take our products to the next level to make an even bigger impact!
+
+What You Need to Succeed
+• 5+ years hands-on development experience of web development
+• Working knowledge of; MS SQL, SQL, Developing and performance tuning Stored Procedures, .NET
+• Framework, C#, VB, Web Services/API, API Scalability and performance tuning
+• Experience in an Agile environment delivering production ready code every sprint
+• Experience in Micro services
+• Solid knowledge of authentication and authorization
+• Knowledge of DB design
+• Experience with integration and performance testing
+• Native Mobile implementation (iOS/Android) experience is considered an asset
+
+What’s in it for You
+• Be part of a great team where people enjoy working with each other
+• Gym membership coverage
+• Medical, dental and vision coverage
+• Paid parking and transit allowance
+• Matching RPP & discount stock purchase program
+• Future learning opportunities with tuition reimbursement
+• Modern and open work space with an interactive lunch room and great views of the city from our office space
+• Centrally located with easy access to public transportation, and exceptionally close proximity to highways and shopping malls
+• A fun work environment with staff lunches and frequent social activities
+• Free Cycle Loan Program during the summer
+• Casual dress code
+• $1,500 referral bonus for new hire recommendations
+• Lots more – check us out at https://transcore.ca/careers
+• If you pride yourself on being a sharp ambitious developer and are passionate about technology, then we
+• would love to hear from you! Send us your resume.
+
+By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
     category:"Finance",
     duration:"More than 6 months",
     user: User.find_by(company_name:"Frank and Oak")
