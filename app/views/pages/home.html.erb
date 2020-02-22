@@ -8,13 +8,4 @@
 </div>
 </div>
 
-<div class="search_bar_home">
-    <%= form_tag jobs_path, method: :get do %>
-    <%= text_field_tag :query,
-    params[:query],class: "form_field search",
-    placeholder: "Find an internship near you!"
-  %>
-  <%= submit_tag "Search", class: "button" %>
-  <% end %>
-</div>
-
+<%= render 'shared/search_bar' %>
