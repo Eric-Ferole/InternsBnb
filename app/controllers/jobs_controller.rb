@@ -1,8 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_jobs, only: ["show", "edit", "update", "destroy"]
 
-
-
   def index
     if params[:query].present?
       @jobquery = "#" + params[:query]

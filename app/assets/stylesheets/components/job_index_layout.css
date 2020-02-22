@@ -46,3 +46,19 @@
 .search_results p {
   margin-top: 0;
 }
+
+.button {
+  max-height: 50px;
+  background: #EC3232;
+  border-radius: 6px;
+  padding: 15px ;
+}
+
+.button:hover {
+  background: #CF2C2C;
+  transition: 0.5s;
+}
+
+.button li {
+  color: #fff;
+}
