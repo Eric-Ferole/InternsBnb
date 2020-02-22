@@ -1,51 +1,29 @@
-<div class="container">
-<h1><%= @job.name %></h1>
-  <div class="row justify-content-md-center show_card">
-    <div class="col-md-12 col-lg-6">
-      <% if @job.user.logo.attached? %>
-        <td class=""><%= cl_image_tag @job.user.logo.key, height: 120, crop: :fill %></td>
-      <% end %>
-      <h3><strong><%= @job.user.company_name %></strong></h3>
-      <b>Address: <%= @job.user.street_address %></b>
-    </div>
-  </div>
-    <li class="block-description"><b>Category:</b> <%= @job.category %></li>
-    <li class="block-description"><b>Internship duration: </b><%= @job.duration %></li>
-    <li class="block-description"><b>Publication date: </b><%= @job.created_at.strftime("%b %d, %Y") %></li>
-    <li class="block-description"><b>Address: </b><%=@job.user.street_address%> </li>
-    <li class="block-description"><b>Publication date: </b><%= @job.created_at %></li>
-<div>
-  <p>
-    <%= @job.description.html_safe %>
-  </p>
-</div>
-<div>
-  <p><%= link_to "Visit Website", @job.user.website %></p>
-</div>
-</div>
-</div>
 
 <!-- This is were the business details card starts -->
-
+<div class="container">
 <div class="card_wraper">
   <div class="business_card_login">
     <div class="logo">
-      <img src="./images/BNC_logo.png" alt="" width="106" >
+      <%= cl_image_tag @job.user.logo.key, height: 95, crop: :fill %>
     </div>
     <div class="card_infos">
-      <p class="business_name">Banque Nationale du Canada</p>
-      <p class="infos_label">Number of employee</p>
-      <p class="infos">More than 250 employees</p>
-      <p class="infos_label ">Address</p>
-      <p class="infos">1435 Rue Saint-Alexandre, Montréal, QC H3A 2G4</p>
-      <a href="#">Website</a>
+      <p class="business_name"><%= @job.user.company_name %></p>
+      <p class="infos">Number of employee</p>
+      <p class="infos_label">More than 250 employees</p>
+      <p class="infos">Address</p>
+      <p class="infos_label "><%= @job.user.street_address %></p>
+      <p class="infos_label">Created at:</p>
+      <p class="infos_label"><%= @job.created_at.strftime("%b %d, %Y") %></p>
+      <a href=""><%= link_to "Visit Website", @job.user.website %></a>
     </div>
   </div>
   <div class="map_container">
-    <div class="card_map"></div>
+    <div class="card_map">
+       <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
   </div>
   <div class="apply_container">
-    <a href="#"><div class="bt-xl">Submit your candidacy</div></a>
+    <a href="#"><div class="bt-xl"><%=link_to "Submit your candidacy",new_job_request_path(@job), class: "bt-xl"%> </div></a>
   </div>
 </div>
 
@@ -58,5 +36,6 @@
 <% end %>
 <button type='button' onclick="location.href='<%= jobs_path %>';">Back to list</button>
 <button type='button' onclick="location.href='<%=new_job_request_path(@job)%>';">Apply to job</button>
+</div>
 
 
