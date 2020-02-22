@@ -1,20 +1,24 @@
 <h1>Create an internship</h1>
 
+
+<div class="job_form_container">
 <%= simple_form_for @job do |f| %>
   <%= f.error_notification %>
 
-    <%= f.label :duration, "Internship duration" %> :
-    <%= f.select :duration, ["Less than 3 months", "3 months", "3-6 months", "6 months", "More than 6 months"] %> <br>
+<!--     <%= f.label :duration, "Internship duration :" %>
+ -->    <%= f.select :duration, ["Less than 3 months", "3 months", "3-6 months", "6 months", "More than 6 months"], class: "form_field" %> <br>
 
-    <%= f.label :name, "Job title" %> : <%= f.text_field :name %> <br>
+<!--     <%= f.label :name, "Job title :" %>
+ -->    <%= f.text_field :name, class: "form_field" %>
 
-    <%= f.label :description, "Enter a description" %> : <br>
+    <%= f.label :description, "Enter a description :" %>
     <div id = "description_container">
       <%= f.text_area :description %>
     </div><br>
 
-    <%= f.submit "submit" %>
+    <%= f.submit "submit", class: "button_job" %>
 <% end %>
+</div>
 
 <p><%= link_to "Back to list", jobs_path %></p>
 </div>
