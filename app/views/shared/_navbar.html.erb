@@ -30,9 +30,10 @@
             <a href=""><li><%=link_to "Job Postings", jobs_path %> <span class="indice"><%=@jobscount %></span></li></a>
             <a href=""><li><%=link_to "Profile", user_path(current_user)%></li></a>
             <a href=""><li><%= link_to "Create a post", new_job_path, class: "button"%></li></a>
-
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-link" %>
+            <%= link_to destroy_user_session_path do %>
             <%= image_tag "sign-out-alt.svg", alt: "sign-out"%>
+            <% end %>
           </ul>
         </div>
       </div>
@@ -49,7 +50,12 @@
         </div>
       </div>
 
-      <div class="search_bar">
-       <input type="text" class="form_field search" placeholder="Enter a keyword ex: Web Developer, Designer, etc." name="seach" id='search'/>
-       <input type="text" class="form_field city" placeholder="Enter a city" name="city" id='city'/>
-      </div>
+    <div class="search_bar">
+    <%= form_tag jobs_path, method: :get do %>
+    <%= text_field_tag :query,
+    params[:query],class: "form_field search",
+    placeholder: "Find an internship near you!"
+  %>
+  <%= submit_tag "Search", class: "button" %>
+  <% end %>
+</div>
