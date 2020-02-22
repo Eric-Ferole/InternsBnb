@@ -20,21 +20,29 @@
 }
 
 .job_name.result {
+  margin-bottom: 12px;
+}
+
+.job_name.result a {
   font-weight: 500;
   font-size: 20px;
+  margin-bottom: 12px;
 }
 
 .business_name.result {
   font-size: 15px;
   font-weight: normal;
+  margin-bottom: 4px;
 }
 
 .text-s {
   font-size: 13px;
+  margin-bottom: 4px;
 }
 
 .date {
   font-size: 13px;
+  margin-bottom: 4px;
 }
 
 .card_infos p {
