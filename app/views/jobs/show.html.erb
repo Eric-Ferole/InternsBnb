@@ -1,43 +1,42 @@
-
 <!-- This is were the business details card starts -->
-<div class="container">
-<div class="card_wraper">
-  <div class="business_card_login">
-    <div class="logo">
-      <%= cl_image_tag @job.user.logo.key, height: 95, crop: :fill %>
-    </div>
-    <div class="card_infos">
-
-      <p class="business_name"><%= @job.user.company_name %></p>
-      <p class="infos">Number of employee</p>
-      <p class="infos_label">More than 250 employees</p>
-      <p class="infos">Address</p>
-      <p class="infos_label "><%= @job.user.street_address %></p>
-      <p class="infos_label">Created at:</p>
-      <p class="infos_label"><%= @job.created_at.strftime("%b %d, %Y") %></p>
-      <a href=""><%= link_to "Visit Website", @job.user.website %></a>
-
-    </div>
+<div class="container_job">
+  <div class="job_descripiton"><%= @job.description.html_safe %>
   </div>
-  <div class="map_container">
-    <div class="card_map">
-       <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  <div class="card_wraper">
+    <div class="business_card_login">
+      <div class="logo">
+        <%= cl_image_tag @job.user.logo.key, height: 95, crop: :fill %>
+      </div>
+      <div class="card_infos">
+        <p class="business_name"><%= @job.user.company_name %></p>
+        <p class="infos">Number of employee</p>
+        <p class="infos_label">More than 250 employees</p>
+        <p class="infos">Address</p>
+        <p class="infos_label "><%= @job.user.street_address %></p>
+        <p class="infos_label">Created at:</p>
+        <p class="infos_label"><%= @job.created_at.strftime("%b %d, %Y") %></p>
+        <a href=""><%= link_to "Visit Website", @job.user.website %></a>
+      </div>
+      <div class="map_container">
+        <div class="card_map">
+          <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="apply_container">
-    <a href="#"><div class="bt-xl"><%=link_to "Submit your candidacy",new_job_request_path(@job), class: "bt-xl"%> </div></a>
-  </div>
-</div>
-
+  <div class="action-buttons">
+    <div class="apply_container">
+    <a href="#">
+      <div class="bt-xl"><%=link_to "Submit your candidacy",new_job_request_path(@job), class: "bt-xl"%> </div></a>
+      </div>
 <!-- This is where it ends -->
+    <% if policy(@job).edit? %>
+    <button type='button' onclick="location.href='<%= edit_job_path %>';">edit job</button>
+    <% end %>
+    <button type='button' onclick="location.href='<%= jobs_path %>';">Back to list</button>
+    <button type='button' onclick="location.href='<%=new_job_request_path(@job)%>';">Apply to job</button>
+  </div>
+ </div>
 
-
-
-<% if policy(@job).edit? %>
-<button type='button' onclick="location.href='<%= edit_job_path %>';">edit job</button>
-<% end %>
-<button type='button' onclick="location.href='<%= jobs_path %>';">Back to list</button>
-<button type='button' onclick="location.href='<%=new_job_request_path(@job)%>';">Apply to job</button>
-</div>
 
 
