@@ -20,18 +20,32 @@
     <div class="header">
       <div class="nav_container">
         <div class="logo_hi">
-          <%= link_to "#" do %>
+          <%= link_to root_path  do %>
             <%= image_tag "hi-interns_logo.png", alt: "Hi Interns", style: 'width:172px;' %>
           <% end %>
         </div>
         <div class="nav_menu">
+          <% if user_signed_in? %>
           <ul>
-            <a href=""><li>Candidates <span class="indice">12</span></li></a>
-            <a href=""><li>My profile</li></a>
-            <a href=""><li>My posts</li></a>
-            <a href="" class="button"><li>Create a post</li></a>
-            <a href=""><li>Logout  <%= image_tag "sign-out-alt.svg", alt: "sign-out"%></li></a>
+            <a href=""><li><%=link_to "Job Postings", jobs_path %> <span class="indice"><%=@jobscount %></span></li></a>
+            <a href=""><li><%=link_to "Profile", user_path(current_user)%></li></a>
+            <a href=""><li><%= link_to "Create a post", new_job_path, class: "button"%></li></a>
+
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-link" %>
+            <%= image_tag "sign-out-alt.svg", alt: "sign-out"%>
           </ul>
+        </div>
+      </div>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        </li>
+                <li class="nav-item">
+          <%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %>
+        </li>
+
+      <% end %>
         </div>
       </div>
 

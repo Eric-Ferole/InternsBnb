@@ -12,8 +12,7 @@
 <ul>
 <li><b>Category:</b> <%= @job.category %></li>
 <li><b>Internship duration </b> : <%= @job.duration %></li>
-<li><b>Country: </b><%=@job.country.city%> </li>
-<li><b>Publication date </b>: <%= @job.created_at %></li>
+<li><b>Publication date </b>: <%= @job.created_at.strftime("%b %d, %Y") %></li>
 </ul>
 <div>
   <p><%= link_to "Visit Website", @job.user.website %></p>

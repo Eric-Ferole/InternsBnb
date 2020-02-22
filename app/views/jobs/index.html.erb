@@ -16,11 +16,11 @@
         <div class="card_infos">
           <p class="job_name result"><%=link_to job.name, job_path(job) %></p>
           <p class="business_name result"><%= job.user.company_name %></p>
-          <p class="date"><%= job.created_at %></p>
+          <p class="date"><%= job.created_at.strftime("%b %d, %Y") %></p>
           <p class="text-s"><%= image_tag "map-marker-alt.svg", alt: "Map pin" %> <%=job.user.street_address%></p>
         </div>
           <div class="cta">
-            <%= link_to "View details", job.user.website, class: 'bt-m' %>
+            <%= link_to "View details", job.user.website, class: 'button' %>
 <!--           <a href="#"><div class="bt-m">View details</div></a>
  -->        </div>
       </div>
@@ -31,7 +31,7 @@
   </div>
   </div>
 </div>
-<<<<<<< HEAD
-=======
-<!--style="width: 100%; height: 600px;"-->
->>>>>>> 70f7ead4fcd21a6226ac26027727dbb63bbc6b1b
+
+
+<!--style="width: 100%; height: 600px;
+>>>>>>> 70f7ead4fcd21a6226ac26027727dbb63bbc6b1b-->
