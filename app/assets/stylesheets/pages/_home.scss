@@ -1,1 +1,31 @@
 // Specific CSS for your home-page
+.illustration_container {
+  display: flex;
+  justify-content: center;
+}
+
+.illustration {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(Illustration_home.png);
+  background-size: 707px 390px;
+  background-repeat: no-repeat;
+  width: 1139px;
+  height: 390px;
+
+}
+
+.hero_text {
+  width: 517px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    color: #EC3232;
+    font-size: 48px;
+  }
+
+  h3 {
+  }
+}
