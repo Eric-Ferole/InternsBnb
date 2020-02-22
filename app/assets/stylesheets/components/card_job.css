@@ -33,7 +33,7 @@ body {
   align-self: center;
 }
 
-.business_name {
+.business_name.result{
   color: #000000;
   font-family: "Avenir Next";
   font-size: 20px;

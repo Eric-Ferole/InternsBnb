@@ -22,7 +22,7 @@
 
 .search_results {
   align-self: stretch;
-  width: 40%;
+  width: 50%;
 }
 
 .search_query {
@@ -38,7 +38,7 @@
   height: 100vh;
   position: sticky;
   top: 0;
-  width: 60%;
+  width: 50%;
   background-color: darkgrey;
   align-self: stretch;
 }

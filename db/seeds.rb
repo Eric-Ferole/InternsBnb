@@ -15,18 +15,19 @@ Job.destroy_all
 puts 'Creating Users...'
 
 users_attributes = [
-{ company_name:"National Bank of Canada", street_address:"600 Rue de la Gauchetière O 28e étage", postal_code:"H3B 4L2", city:"Montreal", province:"Quebec", country:"Canada", website:"https://jobs.nbc.ca/", email:"test1@test.com", password:"1234sunshine" },
-{ company_name:"Ivado Lab", street_address:"1100 Avenue des Canadiens-de-Montréal Suite 401", postal_code:"H3B 2S2", city:"Montreal", province:"Quebec", country:"Canada", website:"www.ivadolab.ca", email:"test2@test.com", password:"1234sunshine" },
-{ company_name:"Lightspeed", street_address:"700 Rue Saint Antoine E", postal_code:"H2Y 1A6", city:"Montreal", province:"Quebec", country:"Canada", website:"https://www.lightspeedhq.com/careers/", email:"test3@test.com", password:"1234sunshine" },
-{ company_name:"CGI", street_address:"1350 Boulevard René-Lévesque O", postal_code:"H3G 1T4", city:"Montreal", province:"Quebec", country:"Canada", website:"https://www.cgi.com/en/careers", email:"test4@test.com", password:"1234sunshine" },
-{ company_name:"Google", street_address:"1253 Avenue McGill College", postal_code:"H3B 2Y5", city:"Montreal", province:"Quebec", country:"Canada", website:"https://careers.google.com/jobs/", email:"test5@test.com", password:"1234sunshine" },
-{ company_name:"AutoDesk", street_address:"10 Rue Duke", postal_code:"H3C 2L7", city:"Montreal", province:"Quebec", country:"Canada", website:"https://www.autodesk.com/careers", email:"test9@test.com", password:"1234sunshine" },
-{ company_name:"Cirque du Soleil", street_address:"8400 2e Avenue", postal_code:"H1Z 4M6", city:"Montreal", province:"Quebec", country:"Canada", website:"https://www.cirquedusoleil.com/careers", email:"test10@test.com", password:"1234sunshine" },
-{ company_name:"Warner Brothers Games Montréal", street_address:"888 Boulevard de Maisonneuve East", postal_code:"H2L 4M8", city:"Montreal", province:"Quebec", country:"Canada", website:"https://wbgamesmontreal.com/en/jobs", email:"test13@test.com", password:"1234sunshine" },
-{ company_name:"CBC/Radio-Canada", street_address:"1400 Boulevard René-Lévesque E", postal_code:"H2L 2M2", city:"Montreal", province:"Quebec", country:"Canada", website:"https://cbc.radio-canada.ca/en/working-with-us/jobs", email:"test14@test.com", password:"1234sunshine" },
-{ company_name:"Morgan Stanley", street_address:"700 Rue Wellington", postal_code:"H3C 3S4", city:"Montreal", province:"Quebec", country:"Canada", website:"https://www.morganstanley.com/people/people-montreal", email:"test15@test.com", password:"1234sunshine" },
-{ company_name:"Morneau Shepell", street_address:"800 Rue du Square-Victoria", postal_code:"H4Z 0A4", city:"Montreal", province:"Quebec", country:"Canada", website:"https://www.morneaushepell.com/ca-en/careers", email:"test16@test.com", password:"1234sunshine" },
-{ company_name:"Frank and Oak", street_address:"160 Rue St Viateur East", postal_code:"H2T 1A8", city:"Montreal", province:"Quebec", country:"Canada", website:"www.frankandoak.com", email:"test19@test.com", password:"1234sunshine" }]
+
+{ company_name:"National Bank of Canada", street_address:"600 Rue de la Gauchetière O 28e étage Montreal, Canada", country:"Canada", website:"https://jobs.nbc.ca/", email:"test1@test.com", password:"1234sunshine" },
+{ company_name:"Ivado Lab", street_address:"1100 Avenue des Canadiens-de-Montréal Suite 401 Montreal, Canada", country:"Canada", website:"www.ivadolab.ca", email:"test2@test.com", password:"1234sunshine" },
+{ company_name:"Lightspeed", street_address:"700 Rue Saint Antoine E Montreal, Canada", country:"Canada", website:"https://www.lightspeedhq.com/careers/", email:"test3@test.com", password:"1234sunshine" },
+{ company_name:"CGI", street_address:"1350 Boulevard René-Lévesque O Montreal, Canada", country:"Canada", website:"https://www.cgi.com/en/careers", email:"test4@test.com", password:"1234sunshine" },
+{ company_name:"Google", street_address:"1253 Avenue McGill College Montreal, Canada", country:"Canada", website:"https://careers.google.com/jobs/", email:"test5@test.com", password:"1234sunshine" },
+{ company_name:"AutoDesk", street_address:"10 Rue Duke Montreal, Canada", country:"Canada", website:"https://www.autodesk.com/careers", email:"test9@test.com", password:"1234sunshine" },
+{ company_name:"Cirque du Soleil", street_address:"8400 2e Avenue Montreal, Canada", country:"Canada", website:"https://www.cirquedusoleil.com/careers", email:"test10@test.com", password:"1234sunshine" },
+{ company_name:"Warner Brothers Games Montréal", street_address:"888 Boulevard de Maisonneuve East Montreal, Canada", country:"Canada", website:"https://wbgamesmontreal.com/en/jobs", email:"test13@test.com", password:"1234sunshine" },
+{ company_name:"CBC/Radio-Canada", street_address:"1400 Boulevard René-Lévesque E Montreal, Canada", country:"Canada", website:"https://cbc.radio-canada.ca/en/working-with-us/jobs", email:"test14@test.com", password:"1234sunshine" },
+{ company_name:"Morgan Stanley", street_address:"700 Rue Wellington Montreal, Canada", country:"Canada", website:"https://www.morganstanley.com/people/people-montreal", email:"test15@test.com", password:"1234sunshine" },
+{ company_name:"Morneau Shepell", street_address:"800 Rue du Square-Victoria Montreal, Canada", country:"Canada", website:"https://www.morneaushepell.com/ca-en/careers", email:"test16@test.com", password:"1234sunshine" },
+{ company_name:"Frank and Oak", street_address:"160 Rue St Viateur East Montreal, Canada", country:"Canada", website:"www.frankandoak.com", email:"test19@test.com", password:"1234sunshine" }]
 
 puts 'Adding logos...'
 
