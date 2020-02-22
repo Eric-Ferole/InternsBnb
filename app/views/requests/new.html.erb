@@ -12,9 +12,7 @@
     </thead>
     <tbody>
       <tr>
-
         <ul>
-
           <li><b>Description: </b><%= @job.description %></li>
           <li><b>Duration: </b> <%= @job.duration %></li>
          <li><b>Publication date : </b><%= @job.created_at %></li>
@@ -24,24 +22,10 @@
   </tbody>
 </table>
 
-
 <%= simple_form_for [@job, @request] do |f| %>
   <%= f.input :description%>
   <%= f.error_notification %>
-
-
-
-
-
-    <%= f.submit "submit" %>
+  <%= f.submit "submit" %>
 <% end %>
 
-
-
-
-
-
-
-<%= current_user.email %>
-
-<p><%= link_to "Back to list", jobs_path %></p>
+<p><%= link_to "Back to the internship list", jobs_path %></p>
