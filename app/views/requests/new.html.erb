@@ -3,11 +3,13 @@
     <table class="table">
     <thead>
       <tr>
+      <div class="logo">
       <% if @job.user.logo.attached? %>
       <%= cl_image_tag @job.user.logo.key, height: 100, crop: :fill %>
       <% end %>
+    </div>
         <h2><%= @job.name.capitalize %></h2>
-        <th scope="col"><h3>Description</h3></th>
+        <th scope="col"><h3>Tell Us About Yourself!</h3></th>
       </tr>
     </thead>
     <tbody>
@@ -22,6 +24,7 @@
   </tbody>
 </table>
 
+
 <%= simple_form_for [@job, @request] do |f| %>
   <%= f.input :description%>
   <%= f.error_notification %>
@@ -29,3 +32,4 @@
 <% end %>
 
 <p><%= link_to "Back to the internship list", jobs_path %></p>
+</div>
