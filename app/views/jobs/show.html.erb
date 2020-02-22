@@ -5,21 +5,20 @@
       <% if @job.user.logo.attached? %>
         <td class=""><%= cl_image_tag @job.user.logo.key, height: 120, crop: :fill %></td>
       <% end %>
-    <h3><strong><%= @job.user.company_name %></strong></h3>
-    <b>Address: <%= @job.user.street_address %></b>
+      <h3><strong><%= @job.user.company_name %></strong></h3>
+      <b>Address: <%= @job.user.street_address %></b>
+    </div>
   </div>
-  </div>
-<ul>
-<li><b>Category:</b> <%= @job.category %></li>
-<li><b>Internship duration </b> : <%= @job.duration %></li>
-<li><b>Publication date </b>: <%= @job.created_at.strftime("%b %d, %Y") %></li>
-
-<li><b>Address: </b><%=@job.user.street_address%> </li>
-
-<li><b>Publication date </b>: <%= @job.created_at %></li>
-
-
-</ul>
+    <li class="block-description"><b>Category:</b> <%= @job.category %></li>
+    <li class="block-description"><b>Internship duration: </b><%= @job.duration %></li>
+    <li class="block-description"><b>Publication date: </b><%= @job.created_at.strftime("%b %d, %Y") %></li>
+    <li class="block-description"><b>Address: </b><%=@job.user.street_address%> </li>
+    <li class="block-description"><b>Publication date: </b><%= @job.created_at %></li>
+<div>
+  <p>
+    <%= @job.description.html_safe %>
+  </p>
+</div>
 <div>
   <p><%= link_to "Visit Website", @job.user.website %></p>
 </div>
