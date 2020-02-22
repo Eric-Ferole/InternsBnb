@@ -149,7 +149,9 @@ What’s in it for You
 • would love to hear from you! Send us your resume.
 
 By applying to this position you are confirming you possess either a Canadian citizenship, permanent resident status or work permit.",
-    category:"Finance",
+    category:"
+
+    Finance",
     duration:"6 months",
     user: User.find_by(company_name:"National Bank of Canada")
   },
