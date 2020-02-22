@@ -23,6 +23,13 @@ class JobsController < ApplicationController
 
   def show
     authorize @job
+    @markers = [
+      {
+        lat: @job.user.latitude,
+        lng: @job.user.longitude
+      }
+    ]
+
   end
 
   def new

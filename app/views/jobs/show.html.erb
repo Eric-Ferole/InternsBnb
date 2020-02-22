@@ -13,15 +13,9 @@
         <p class="infos_label">More than 250 employees</p>
         <p class="infos">Address</p>
         <p class="infos_label "><%= @job.user.street_address %></p>
-        <p class="infos_label">Created at:</p>
+        <p class="infos">Created at:</p>
         <p class="infos_label"><%= @job.created_at.strftime("%b %d, %Y") %></p>
         <a href=""><%= link_to "Visit Website", @job.user.website %></a>
-      </div>
-      <div class="map_container">
-        <div class="card_map">
-          <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-          </div>
-        </div>
       </div>
     </div>
   <div class="action-buttons">
@@ -34,7 +28,11 @@
     <button type='button' onclick="location.href='<%= edit_job_path %>';">edit job</button>
     <% end %>
     <button type='button' onclick="location.href='<%= jobs_path %>';">Back to list</button>
-    <button type='button' onclick="location.href='<%=new_job_request_path(@job)%>';">Apply to job</button>
   </div>
-
 </div>
+ <!--<div class="map_container">
+    <div class="card_map">
+      <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
+    </div>
+  </div>-->
