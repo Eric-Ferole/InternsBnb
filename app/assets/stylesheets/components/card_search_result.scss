@@ -11,7 +11,19 @@
 
 .cta {
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
+  width: 120px;
+
+  .button {
+    color: #fff;
+  }
+
+  .button:hover {
+    color: #fff;
+    background: #CF2C2C;
+    transition: 0.5s;
+  }
 }
 
 .card_infos {
@@ -27,6 +39,7 @@
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 12px;
+  color: #000;
 }
 
 .business_name.result {

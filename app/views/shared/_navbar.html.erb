@@ -54,7 +54,7 @@
     <%= form_tag jobs_path, method: :get do %>
     <%= text_field_tag :query,
     params[:query],class: "form_field search",
-    placeholder: "Find an internship near you!"
+    placeholder: "Enter a keyword ex: Web Developer, Designer, etc."
   %>
   <%= submit_tag "Search", class: "button" %>
   <% end %>
