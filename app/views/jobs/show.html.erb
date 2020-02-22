@@ -11,9 +11,20 @@
   </div>
 <ul>
 <li><b>Category:</b> <%= @job.category %></li>
+<<<<<<< HEAD
+<li><b>Internship duration</b> : <%= @job.duration %></li>
+<<<<<<< HEAD
+=======
+=======
 <li><b>Internship duration </b> : <%= @job.duration %></li>
 <li><b>Publication date </b>: <%= @job.created_at.strftime("%b %d, %Y") %></li>
+>>>>>>> fa85ec7e48608dda4c7ecd6fe485df959a3ae8a4
 <li><b>Address: </b><%=@job.user.street_address%> </li>
+<<<<<<< HEAD
+>>>>>>> 9e1b2b02b012b46ac168b508c4af207fee339785
+<li><b>Publication date </b>: <%= @job.created_at %></li>
+=======
+>>>>>>> 44273b11a5d59e07719cf90676eaa547776c3dc9
 </ul>
 <div>
   <p><%= link_to "Visit Website", @job.user.website %></p>
