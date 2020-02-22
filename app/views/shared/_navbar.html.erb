@@ -50,3 +50,12 @@
         </div>
       </div>
 
+    <div class="search_bar">
+    <%= form_tag jobs_path, method: :get do %>
+    <%= text_field_tag :query,
+    params[:query],class: "form_field search",
+    placeholder: "Enter a keyword ex: Web Developer, Designer, etc."
+  %>
+  <%= submit_tag "Search", class: "button" %>
+  <% end %>
+</div>
